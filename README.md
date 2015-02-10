@@ -17,22 +17,32 @@ The following guideline have tested successfully on Ubuntu 12.04 LTS.
 # Configurate USB device
 If you plan to run the App on a Android device, you can follow the instructions connecting your device to Linux. 
 
-1. Get the Vender Number and Model Number of your device
+1. Get the **Vender Number** and **Model Number** of your device
 
-  Use commend `lsusb` then you can find that. 
+  Use commend `lsusb` then you wii see information like below. 
+  
+  ````
+  Bus 001 Device 003: ID 0bb4:0dfb HTC (High Tech Computer Corp.) 
+  Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+  Bus 002 Device 004: ID 0e0f:0008 VMware, Inc. 
+  Bus 002 Device 003: ID 0e0f:0002 VMware, Inc. Virtual USB Hub
+  Bus 002 Device 002: ID 0e0f:0003 VMware, Inc. Virtual Mouse
+  Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+  ````
+  For example. The **Vender Number** and **Model Number** for my HTC device are `0bb4` and `0dfb`, respectively.
 2. Add new USB rules to Linux 
 
   Create the file (if it does not exist): `/etc/udev/rules.d/51-android.rules`
-  Add new rule with the vender number and model number to the file:
+  Add new rule with the **Vender Number** and **Model Number** to the file.
   ````
-  SUBSYSTEM==“usb”, SYSFS{idVendor}==“0bb4”, MODE=“0cd6”
+  SUBSYSTEM==“usb”, SYSFS{idVendor}==“0bb4”, MODE=“0dfb”
   ````
-3. Change file permission such that you can execute it 
+3. Change file permission such that you can execute it.
 
   ````
   sudo chmod a+rx /etc/udev/rules.d/51-android.rules
   ````
-4. Apply your change
+4. Apply your change.
 
   ````
   sudo restart udev
@@ -43,10 +53,12 @@ If you plan to run the App on a Android device, you can follow the instructions 
   <your Android SDK path>/platform-tools/adb kill-server 
   sudo <your Android SDK path>/platform-tools/adb devices
   ````
-  You can find your device information if the operation is succeed.
+  You can find your device in Eclipse DDMS, if operations are succeed.
   
 # Download project
-Using `git` to download this project. This project has two sub-folder. One is android project. The other is for encoding videos.
+This project has two sub-folder. One is android project. The other is for encoding videos.
+
+`git clone https://github.com/nmsl/svc_android_project.git`
 
 ## How to encode videos
 
