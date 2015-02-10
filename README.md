@@ -10,14 +10,11 @@ This work have published on the 2013 IEEE International Conference on Multimedia
 We provide our source code and encourage other people working on this field.
 The following guideline have tested successfully on Ubuntu 12.04 LTS.
 
-## Environment Setup
-1. Install Java JDK
-2. Install Eclipse IDE and CDT package
-3. Install Android SDK 
-4. Setup Android plugin for Eclipse 
-5. Install Android NDK
+# Tools
+1. Oracle-JDK, [SDK](http://developer.android.com/sdk/index.html), [NDK](http://developer.android.com/tools/sdk/ndk/index.html)
+2. Eclipse and ADT plugin.
 
-## Configurate USB device
+# Configurate USB device
 If you plan to run the App on a Android device, you can follow the instructions connecting your device to Linux. 
 
 1. Get the Vender Number and Model Number of your device
@@ -48,11 +45,18 @@ If you plan to run the App on a Android device, you can follow the instructions 
   ````
   You can find your device information if the operation is succeed.
   
-## Build source code and run the App
-1. Go to the source code folder 
+# Download project
+Using `git` to download this project. This project has two sub-folder. One is android project. The other is for encoding videos.
+
+## How to encode videos
+
+  
+# Build source code and run the App
+1. Go to the source code from `git`
 2. Build library
 
   ````
+  cd <project/folder>
   <your Android NDK path>/ndk-build 
   ````
-3. The shared library for decoding will be created. Then you can execute the Android program from Eclipse IDE
+3. The shared libraries are created. Then you can execute the Android program from Eclipse.
