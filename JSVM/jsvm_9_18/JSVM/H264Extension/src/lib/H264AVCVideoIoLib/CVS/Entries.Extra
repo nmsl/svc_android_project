@@ -1,0 +1,16 @@
+/H264AVCVideoIoLib.cpp////
+/H264AVCVideoIoLib.rc////
+/H264AVCVideoIoLibStatic.dsp////
+/H264AVCVideoIoLibStatic.dsw////
+/H264AVCVideoIoLibStatic.vcproj////
+/H264AVCVideoIoLibStatic_vc8.vcproj////
+/H264AVCVideoIoLibStatic_vc9.vcproj////
+/LargeFile.cpp////
+/ReadBitstreamFile.cpp////
+/ReadYuvFile.cpp////
+/WriteBitstreamToFile.cpp////
+/WriteYuvToFile.cpp////
+/WriteYuvaToDisplay.cpp////
+/WriteYuvaToRgb.cpp////
+/WriteYuvaToRgb.h////
+/resource.h////
