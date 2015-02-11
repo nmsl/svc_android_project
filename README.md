@@ -61,13 +61,12 @@ If you plan to run the App on a Android device, you can follow the instructions 
 This project has four sub-folders.
 * One is android project. 
 * JSVM and stream are used for downloading and encoding.
-* DASH is used for inproting SVC video into mp4 format and chopping into segments.
+* DASH is used for improting SVC video into mp4 format and chopping into segments.
 
 ## How to encode videos
-Please reference [this](stream/) page.
+Reference [this](stream/) page.
 
 ## How to chop encoded video into segments for DASH.
-
 ### Install GPAC
 See [GPAC offical web page](http://gpac.wp.mines-telecom.fr/downloads/).
 ### Using dashing script
