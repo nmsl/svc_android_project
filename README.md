@@ -61,6 +61,9 @@ This project has two sub-folder. One is android project. The other is for encodi
 `git clone https://github.com/nmsl/svc_android_project.git`
 
 ## How to encode videos
+Reference README.md in [stream](stream/)
+
+## How to chop encoded video into segments
 
   
 # Build source code and run the App
