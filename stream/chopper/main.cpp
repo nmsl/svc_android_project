@@ -329,10 +329,10 @@ int main(int argc, char** argv) {
 
     if (argc < 2)
     {
-        printf("Usage: a.out 0 <source file> <output folder> <output file prefix> <layerID>\n");
+        printf("Usage: %s 0 <source file> <output folder> <output file prefix> <layerID>\n", argv[0]);
         printf("\t-> Generating all Segments\n");
         printf("Or\n");
-        printf("Usage: a.out 1 <source file> <output folder> <output file prefix> <layerID> <Segment Number>\n");
+        printf("Usage: %s 1 <source file> <output folder> <output file prefix> <layerID> <Segment Number>\n", argv[0]);
         printf("\t-> Generating Secific Segment\n");
         return -1;
     }
@@ -340,15 +340,15 @@ int main(int argc, char** argv) {
     int mode = atoi(argv[1]);
     // Check
     if (mode == 0 && argc < 6) {
-        fprintf(stderr, "Usage: a.out %d <source file> <output folder> <output file prefix> <layerID>\n", mode);
+        fprintf(stderr, "Usage: %s %d <source file> <output folder> <output file prefix> <layerID>\n", argv[0], mode);
         return -1;
     }
     else if (mode == 1 && argc < 7) {
-        fprintf(stderr, "Usage: a.out %d <source file> <output folder> <output file prefix> <layerID> <Segment Number>\n", mode);
+        fprintf(stderr, "Usage: %s %d <source file> <output folder> <output file prefix> <layerID> <Segment Number>\n", argv[0], mode);
         return -1;
     }
     else if (mode == 2 && argc < 3) {
-        fprintf(stderr, "Usage: a.out %d <source file>\n", mode);
+        fprintf(stderr, "Usage: %s %d <source file>\n", argv[0], mode);
         return -1;
     }
     else if (mode >= 3) {

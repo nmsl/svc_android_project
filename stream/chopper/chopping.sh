@@ -67,7 +67,7 @@ function main () {
             "-f")
                 check_bound $argc $((i+1)) $var
                 video=${argv[$((++i))]}
-                # check_video $video
+                check_video $video
                 ;;
             "-m")
                 check_bound $argc $((i+1)) $var
@@ -115,8 +115,8 @@ function main () {
             ;;
         "2")
             echo "Start parsing $video"
-            # echo "./main_g $video $outFolder $prefix $layerID > $outFolder/${prefix}_layer${layerID}_$(date +%s).log"
-            ./main_g 2 $video $outFolder $prefix $layerID > $outFolder/${prefix}_layer${layerID}_$(date +%s).log
+            # echo "./main_g 2 $video > $outFolder/${prefix}_layer${layerID}_$(date +%s).log"
+            ./main_g 2 $video > $outFolder/${prefix}_parsing.log
             ;;
         *)
             ;;
