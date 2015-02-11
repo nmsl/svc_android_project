@@ -17,7 +17,7 @@ There are six parameters.
 - **-m mode_number**: there are three modes
   - **mode 0**: chopping all segments from video.
   - **mode 1**: chopping the [seg_no]th segment from video.
-  - **mode 3**: only show the NAL header message.
+  - **mode 2**: only show the NAL header message.
 - **-o output_folder**: the location for output files (default is current folder).
 - **-p prefix_name**: this parameter is used for output segment name and output sub-folder (default is 'tmp').
 - **-l layer_id**: the range of layer_id is from 0 to 2. 0 meas based layer only. 2 means based layer + two enhancement layers.
