@@ -11,4 +11,4 @@ cd JSVM/H264Extension/build/linux
 make
 ````
 3. after compiling, the executable files are located at `jsvm/bin/`
-The file `jsvm/bin/H264AVCEncoderLibTestStatic` is used for encode.sh (under [stream/jsvm](../stream/jsvm)).
+The file `jsvm/bin/H264AVCEncoderLibTestStatic` is used for encode.sh which is under [stream/jsvm](../stream/jsvm).
