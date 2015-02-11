@@ -26,7 +26,7 @@ There are six parameters.
 ## Example 1:
 Getting all segment from video1.264 with based layer.
 
-The segments are located under `outputs/video1/` folder. Each name of sgmenet start with `output`
+The segments are located under `./outputs/video1/` folder. Each sgmenet name start with `output`
 ````
 ./chopping -f video1.264 -m 0 -o outputs -p output -l 0
 ````
@@ -34,7 +34,7 @@ The segments are located under `outputs/video1/` folder. Each name of sgmenet st
 ## Example 2:
 Getting the 5th segment from video2.264 with based layer and 1 enhancement layer.
 
-The segment is stored under `./test/` and name of segment is `test_5_1.264`.
+The segment is stored under `./test/` and segment name is `test_5_1.264`.
 ````
 ./chopping -f video2.264 -m 1 5 -p test -l 1
 ````
