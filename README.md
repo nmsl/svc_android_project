@@ -56,14 +56,19 @@ If you plan to run the App on a Android device, you can follow the instructions 
   You can find your device in Eclipse DDMS, if operations are succeed.
   
 # Download project
-This project has two sub-folder. One is android project. The other is for encoding videos.
+This project has three sub-folders. One is android project. JSVM and stream are used for encoding.
 
 `git clone https://github.com/nmsl/svc_android_project.git`
 
 ## How to encode videos
-Reference README.md in [stream](stream/)
+Please reference [this](stream/) page.
 
-## How to chop encoded video into segments
+## How to chop encoded video into segments for DASH.
+
+### Install GPAC
+See [GPAC offical web page](http://gpac.wp.mines-telecom.fr/downloads/).
+
+### 
 
   
 # Build source code and run the App
