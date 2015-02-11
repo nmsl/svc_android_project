@@ -18,7 +18,7 @@ To download the CBC avi files, and downsample them to yuvs in multiple resolutio
 To encode the yuv files into 264 files.
 
 ###layered/chopping.sh
-To chop the source video into segments ([how to use](chopping)).
+To chop the source video into segments ([how to use](chopper)).
 		
 ###jsvm/extract.sh (optional)
 To truncate the 264 files into various <s,t>, where s is the resolution and t is the temporal layer.
