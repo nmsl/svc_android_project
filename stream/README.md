@@ -21,4 +21,4 @@ To encode the yuv files into 264 files.
 To chop the source video into segments ([how to use](chopper)).
 		
 ###jsvm/extract.sh (optional)
-To truncate the 264 files into various <s,t>, where s is the resolution and t is the temporal layer.
+To truncate the 264 files into various \<s,t\>, where s is the resolution and t is the temporal layer.
