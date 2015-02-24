@@ -15,11 +15,11 @@ The following guideline have tested successfully on Ubuntu 12.04 LTS.
 2. Eclipse and ADT plugin.
 
 # Configurate USB device
-If you plan to run the App on a Android device, you can follow the instructions connecting your device to Linux. 
+If you plan to run the App on a Android device, you can follow the instructions to connecte your device on Ubuntu. 
 
 1. Get the **Vender Number** and **Model Number** of your device
 
-  Use commend `lsusb` then you wii see information like below. 
+  Using `lsusb` you can see information like below.
   
   ````
   Bus 001 Device 003: ID 0bb4:0dfb HTC (High Tech Computer Corp.) 
@@ -30,10 +30,10 @@ If you plan to run the App on a Android device, you can follow the instructions 
   Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
   ````
   For example. The **Vender Number** and **Model Number** for my HTC device are `0bb4` and `0dfb`, respectively.
-2. Add new USB rules to Linux 
+2. Add new USB rule
 
   Create the file (if it does not exist): `/etc/udev/rules.d/51-android.rules`
-  Add new rule with the **Vender Number** and **Model Number** to the file.
+  Add new rule with **Vender Number** and **Model Number** to the file.
   ````
   SUBSYSTEM==“usb”, SYSFS{idVendor}==“0bb4”, MODE=“0dfb”
   ````
@@ -47,7 +47,7 @@ If you plan to run the App on a Android device, you can follow the instructions 
   ````
   sudo restart udev
   ````
-5. Check whether your device is connected
+5. Check your device is connected
 
   ````
   <your Android SDK path>/platform-tools/adb kill-server 
