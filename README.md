@@ -74,10 +74,11 @@ Reference [here](DASH) to understand how to use.
 
   
 # Build source code and run the App
-2. Build library
+2. Build library (***we suggest cleaning the project before re-building***)
 
   ````
   cd <project/folder>
+  <your Android NDK path>/ndk-build clean
   <your Android NDK path>/ndk-build 
   ````
 3. The shared libraries are created. Then you can execute the Android program from Eclipse.
