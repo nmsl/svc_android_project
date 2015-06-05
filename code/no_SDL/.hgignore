@@ -1,0 +1,4 @@
+syntax: glob
+*.o
+*.a
+obj/local/armeabi-v7a/objs-debug/*

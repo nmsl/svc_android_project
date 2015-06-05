@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Main!</string>
+    <string name="app_name">svc</string>
+    <string name="spin_video">Videos:</string>
+    <string name="spin_quality">Streaming Layers</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
+

@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="my.app.DASHSelector" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lbl_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video Name:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Dodger_Blue" />
+
+        <Spinner
+            android:id="@+id/spin_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:prompt="@string/spin_video" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lbl_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Init Quality Level:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Dodger_Blue" />
+
+        <Spinner
+            android:id="@+id/spin_qulity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/spin_quality" />
+    </LinearLayout>
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lbl_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Streaming Mode:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Dodger_Blue" />
+
+        <Spinner
+            android:id="@+id/spin_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/spin_quality" />
+    </LinearLayout>
+    -->
+
+    <RadioGroup
+        android:id="@+id/group_network"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbtn_3g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Mobile Network " />
+
+        <RadioButton
+            android:id="@+id/rbtn_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WiFi Network" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <SeekBar
+            android:id="@+id/threads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="4"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/lbl_threads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="1 Thread(s)"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Dodger_Blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <SeekBar
+            android:id="@+id/runs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="4"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/lbl_runs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Current Run:1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Dodger_Blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lbl_output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ourput:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Dodger_Blue" />
+
+        <EditText
+            android:id="@+id/edit_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start Streaming" />
+    </LinearLayout>
+
+</LinearLayout>

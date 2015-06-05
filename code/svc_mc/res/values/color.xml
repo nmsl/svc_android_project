@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="Dodger_Blue">#1E90FF</color>
+    <color name="Sky_Blue">#87ceeb</color>
+    <color name="Light_Slate_Gray">#778899</color>
+    <color name="Black">#30000000</color>
+    <color name="Light_Cyan">#E0FFFF</color>
+    <color name="Withe">#ffffff</color>
+
+</resources>

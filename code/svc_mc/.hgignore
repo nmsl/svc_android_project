@@ -1,0 +1,7 @@
+syntax: glob
+*.o
+*.o.d
+*.a
+.tags*
+cscope.out
+obj/local/armeabi-v7a/objs-debug/*
