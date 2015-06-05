@@ -13,7 +13,7 @@ Download JSVM
   cvs -d :pserver:jvtuser:jvt.Amd.2@garcon.ient.rwth-aachen.de:/cvs/jvt login
   ````
 
-3. Download source cod
+3. Download source code
   ````
   cvs -d :pserver:jvtuser@garcon.ient.rwth-aachen.de:/cvs/jvt checkout jsvm
   ````
@@ -22,18 +22,18 @@ How to compile JSVM
 ======================
 There are two verions of jsvm. You can use any one of them. The encoding results are the same.
 
-1 go to build folder
+1. Go to build folder
   ````
   cd JSVM/H264Extension/build/linux
   ````
 
-2 make and compile
+2. Make and compile
   ````
   make
   ````
 
-3 after compiling, the executable files are located at `jsvm/bin/`
-  The file `jsvm/bin/H264AVCEncoderLibTestStatic` is used for encode.sh which is under [stream/jsvm](../stream/jsvm).
+3. After compiling, the executable files are located at `jsvm/bin/`.
+  The file `jsvm/bin/H264AVCEncoderLibTestStatic` is used for `encode.sh` which is under [stream/jsvm](../stream/jsvm).
 
 Compling Errors:
 ======================
@@ -41,7 +41,7 @@ Compling Errors:
   * Include header `#include <cstdio>` into `JSVM/H264Extension/include/Macros.h`
 
 1. `'push_back' was not declared in this scope` or `'insert' was not declared in this scope` inside `JSVM/include/H264AVCCommonIf.h`
-  * change this one around line 93 from
+  * Modify the code around line 93 from
   ````
   MyList& operator += ( const MyList& rcMyList) {
     if( ! rcMyList.empty() ) {
