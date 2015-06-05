@@ -16,5 +16,5 @@ We use Native Development Kit (NDK) to interact with our SVC decoder library.
 ### Project of *svc_mc*
 * Support DASH streaming.
 * Porting SDL to render the image rather than Android API.
-* Using gesture, which provide by SDL library, to trigger the switch events . 
+* Using gesture, which provided by SDL library, to trigger the switch events . 
 * The used segments are generated from [DASH script](../DASH/).
