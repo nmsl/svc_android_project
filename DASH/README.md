@@ -10,5 +10,5 @@ Parameters:
 
 After dashing, you can get the segments under `./dash_output`.
 
-Note that, if video has four layers, and video length is 5.12s. Then you can find four segments inside the output folder.
-It meas video will be chopped according to video length and layer number.
+Note that, if video has four layers and total video length is 5.12s. You will get four segments inside the output folder.
+It meas that this script will chop video into multiple segments per layer.
